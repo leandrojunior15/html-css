@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: italic;
+            background-color: darkcyan;
+        }
+        p{
+            font-style: normal;
+        }
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 2px black;
+        }
+        header{background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+        footer{
+            background-color: black;
+            color: whitesmoke;
+            text-align: center;
+            padding: 2px;
+            margin: 0px;
+        }
+        article{
+            background-color: lightcyan;
+        }
+        article > aside {
+            background-color: rgb(0, 174, 255);
+            width: 230px;
+        }
+        nav{
+            background-color: greenyellow;
+            padding: 3px;
+            width: 50px;
+            box-shadow: 2px 1px 1px black;
+        } /*shorthand de box shadow inset/outset horizontal vertical blur spread cor */
+        nav > a{
+            text-decoration: none;
+            color: red;
+        }
+        nav > a:hover {
+            color: blue;
+            text-decoration: underline;
+        }
+        h1{ box-shadow: 2px 2px 2px;}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="../index1.html">voltar</a>
+            <a href="caixa3.html">avançar</a>
+            <a href="#">Link 3 </a>
+            <a href="#">Link 4</a>
+            <a href="#">Link 5</a>
+        </nav>
+    </header>
+<main>
+<section id="assuntos">
+<h1 style="font-size: 2em;">Vitoria Brasileira e Copa Do Mundo</h1>
+</section>
+<section id="noticias">
+<article>
+    <h2>Brasil vence o Paraguai por 1a0, e se classifica para a Copa Do Mundo 2026 nos Estados Unidos, Canada e Mexico</h2>
+    <p>O Brasil conquistou uma vitória importante sobre o Paraguai e garantiu sua classificação para a Copa do Mundo de 2026. Em um jogo disputado, a Seleção Brasileira mostrou sua força com uma atuação consistente e determinada. Com gol marcado pelo Vinicius Junior, a equipe comandada pelo Carlo Ancelotti demonstrou entrosamento e foco. A vitória não apenas assegurou os três pontos, mas também confirmou a vaga antecipada no Mundial, mantendo viva a tradição brasileira de sempre estar presente na maior competição de futebol do planeta. A torcida comemorou com entusiasmo, renovando as esperanças por mais um título mundial.</p>
+    <aside>
+        <p>Artigo escrito por CasaGrande</p>
+    </aside>
+</article>
+</section>
+</main>
+<footer>
+    Desenvolvido por godofjr 
+</footer>
+
+</body>
+</html>

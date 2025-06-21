@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos HTML e CSS</title>
+    <style>
+    body
+    {background-color: white; 
+    font-family: Arial, Helvetica, sans-serif; 
+    color: white; 
+    text-align: justify;}
+        mark{background-color: greenyellow;}
+        a:visited{color: darkred;}
+    a:active{color: red;}
+    a:hover{color: blue;}
+    h1{margin: auto;
+        border: 10px solid gray;
+        padding: 1px 10px;
+        width: 1200px;
+    }
+    </style>
+    <link rel="stylesheet" href="modulo 1/style.css">
+    <link rel="shortcut icon" href="midia1/imagens/favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+    <a href="index.html">godofjr</a>
+    <a href="modulo 1/desafios.html">desafios do curso em video</a>
+    <a href="desafios android/desafio-android.html">Historia da logo do Android</a>
+    <a href="historia apple/index.html"> Historia da logo da Apple</a>
+    <h1>Principais formatações de texto</h1>
+<h2>Negrito/Destaque </h2>
+<p>Para usar o negrito em uma frase, <b>basta usar a tag b (nao semantica)</b></p>
+<p>Nessa frase, tenho um <strong>termo em destaque</strong> usando a tag strong(com semantica) </p>
+<p><i>termo em italico</i> usando a tag I(sem sematinca)</p>
+<p><em>termo em enfase</em> usando a tag EM(com semantica)</p> 
+<h2>Texto marcado</h2>
+<p>podemos criar <mark>um texto marcado</mark> usando a tag MARk.</p>
+<p><mark>ele nao herda a cor de outro mark</mark></p>
+<h2>Texto pequeno e grande</h2>
+<p>criando texto <small>pequeno</small> e <big>grande</big></p>
+<h2>Texto excluido </h2>
+<p>pode marcar um <dell>texto excluido</dell> para indicar que ele deve ser lido, mas nao considerado, usando dell</p>
+<h2>Texto inserido</h2>
+<p>pode marcar um <ins>texto como inserido</ins> para dar uma enfase e indicar que ele foi adicionado depois, usando ins (pode usar a tag U para inserido com a tag U, sem semantica)</p>
+<h2>Texto sobrescrito</h2>
+<p>para inserir coisas do tipo x<sup>20</sup>+3, usando a tag sup</p>
+<h2>Texto subscrito</h2>
+<p>para inserir coisas do tipo h<sub>2</sub>O, usando a tag sub</p>
+<hr>
+
+<h1>Outras formatações</h1>
+<h2>Codigo fonte/Pre-formatação</h2>
+<p>O comando <code>document.getElementById</code>('teste') é escrito em javascript</p>
+<pre>
+    <code>
+    num = int(input('Digite um numero'))
+    if num % 2 == 0:
+    print (f'O numero {num} é PAR)
+    else:       
+    print (f'O numero `{num} é IMPAR)
+    print('Fim do programa') 
+</code>
+</pre>
+<h2>Citações</h2>
+<p>Como diria o pai de um amigo:<q>o computador é um burro muito rápido</q></p>
+<h3>Citações completas</h3>
+<p>Segundo Raiam Santos: 
+    <blockquote cite="https://www.pensador.com/autor/raiam_santos/">Eu já dei duas voltas ao mundo, morei em Londres, Nova York, Los Angeles e Barcelona…e nunca vi um Fiat Uno estacionado entre uma Ferrari e um Porsche.</blockquote></p>
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="Hypertext Markup Language">html</abbr> e <abbr title="Cascading Style Sheets">css</abbr>.</p>
+<hr>
+
+<h1>Listas</h1>
+<h2>Listas ordenadas</h2>
+<p> para criar listas ordenadas usa-se a tag ol, para fazer sub-listas usa-se &lt;ol type &gt;, e para cada item da lista e para delimitar a lista usa-se a tag li nos dois tipos de listas</p>
+<ol>
+    <li>jogos favoritos</li>
+    <ol type="i"> <!-- 1 A a I i-->
+        <li>God of war</li>
+        <li>R6</li>
+        <li>assassins creed</li>
+    </ol>
+    <li>comidas</li>
+    <ol type="i"> 
+        <li>hamburger </li>
+        <li>pizza</li>
+        <li>camarão empanado</li>
+        <li>bolo de chocolate</li>
+        <li>nuggets</li>
+        </ol>
+</ol>
+<h2>Listas não ordenadas</h2>
+<p>para criar usa-se a tag ul</p>
+<ul> <!-- disc circle square-->
+    <li>jogos favoritos</li>
+    <ol type="i">
+        <li>God of war</li>
+        <li>R6</li>
+        <li>assassins creed</li>
+    </ol>
+    <li>comidas</li>
+    <ol type="i"> 
+        <li>hamburger </li>
+        <li>pizza</li>
+        <li>camarão empanado</li>
+        <li>bolo de chocolate</li>
+        <li>nuggets</li>
+        </ol>
+</ul>
+<h2>Lista de definicoes</h2>
+<p>toda lista usa no começo a tag dl, e cada termo usa a tag dt, e descrição usa a tag dd</p>
+<dl>
+    <dt>Rainbow six siege</dt>
+    <dd>Tom Clancy's Rainbow Six Siege é um jogo eletrônico multiplayer online de tiro em primeira pessoa produzido pela <strong><em>Ubisoft Montreal</em></strong>. Foi inicialmente lançado para Xbox One, PlayStation 4 e para Microsoft Windows.</dd>
+    <dt>God of war</dt>
+    <dd>God of War é um jogo eletrônico de ação-aventura desenvolvido pela <strong><em>Santa Monica Studio</em></strong> e publicado pela Sony Interactive Entertainment. Foi lançado em 20 de abril de 2018 para PlayStation 4 e em 14 de janeiro de 2022 para Microsoft Windows</dd>
+</dl>
+<hr>
+<h1>Links e Ancoras</h1>
+<p>para criar um link usa a tag &lt;a herf= "URL", pode usar o atribuito target, atribuito rel para indicar a natureza do link, atribuito download 
+    <!-- Target Blank(nova guia) Self(abre na mesma guia) Top Parent--> 
+    <!--Rel Next(proxima pagina do site) Prev(pagina anterior do site) Author(site do autor do artigo atual) External(link externo) Nofollow(link externo nao endossado, como um link pago)--> 
+    <!--types application/zip text/html text/css text/javascript video/mp4 video/H264 video/JPEG audio/aac audio/mpeg font/ttf image/jpeg image/png application/pdf-->
+</p>
+    <a href="https://www.youtube.com/@godofjr/videos" hreflang="pt-br" target="_blank">canal de um ex goat</a>
+    <br>
+    <a href="https://www.youtube.com/" hreflang="pt-br" target="_blank"> site do youtube</a>
+    <hr>
+    <h1>Imagens flexiveis</h1>
+    <picture>
+          <source media="(max-width: 750px)" srcset="midia1/imagens/300.jpg" type="image/jpg">
+            <source media="(max-width: 1050px)" srcset="midia1/imagens/700.jpg" type="image/jpg">
+            <img src="midia1/imagens/1000.jpg" alt="A imagem flexivel funciona">
+            </picture>
+            <h1>Audio</h1>
+            <audio preload="metadata" controls autoplay loop>
+            <source src="midia1/audio/guanacast-33.mp3" type="audio/mpeg">
+            <source src="midia1/audio/guanacast-33.ogg" type="audio/ogg">
+            <source src="midia1/audio/guanacast-33.wav" type="audio/wav">
+            <p>Seu navegador não suporta audio <a href="midia/guanacast-33.mp3 download=guanacast-33.mp3"></a></p></audio>
+            <h1>Video</h1>
+            <video width="600" poster="midia1/imagens/thumb.png" controls autoplay loop>
+            <source src="midia1/video/hlmeu.mp4" type="video/mp4">
+            <source src="midia1/video/Hlmeu.webm" type="video/webm">
+            <source src="midia1/video/Hlmeu.mkv" type="video/mkv">
+            <source src="midia1/video/hlmeu.ogv" type="video/ogg">
+            <p>Infezlimente seu navegador não conseguiu carregar o vídeo</p>
+            </video>
+            <br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/NyX29bJOzpI?si=jId-c6hHDOKuWUCK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <hr>
+             <h1 style="color: purple;">Estilos inline</h1>
+             <h1 style="color: pink;">Capitulo 1</h1>
+             <h2>Capitulo 1.1</h2>
+            <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, libero vel ab at dolorum, deserunt molestias fugiat accusamus, quisquam alias ullam totam optio ex. Recusandae aperiam accusamus odio aliquam corrupti.</p>
+             <h1>Capitulo 2</h1>
+                <h2>Capitulo 2.1</h2>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus ad eligendi molestias similique doloremque. Earum, ullam vel, quo impedit dicta ab praesentium, dolores odit dolore nam excepturi eum recusandae iste.</p>
+                <!--Background-color 
+                font-family
+                font-size 
+                color 
+                text-align: justify
+                text-decoration
+                Pode usar css externo, local e inline tudo junto sem problema-->
+                <p>Site de exemplo usando <a href="modulo 1/cores.html">harmonia de cores</a></p>
+                <hr>
+                <h1>fontes</h1>
+                <p>Sites usando tipos de <a href="modulo 1/fontes01.html">fontes</a></p>
+                <h2>Tipos de alinhamento</h2>
+                <p>Para alinhar texto usa-se text-align: left(padrao), center, right, justify. E para criar um espaco no comeco do paragrafo usa-se text-indent. </p>
+                <h1>Seletores personalizados com CSS</h1>
+                <p><a href="modulo 1/seletores1.html">Seletores</a></p>     
+                <p><a href="modulo 1/pseudoclasse.html">pseudoclasse</a></p>   
+                <p><a href="modulo 1/pseudoelementos.html">pseudoelementos</a></p>
+                <p><a href="modulo 1/caixa1.html">Modelos de caixas </a></p>
+</body>
+</html>
