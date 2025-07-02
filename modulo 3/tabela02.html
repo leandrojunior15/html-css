@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        caption{
+            background-color: rgb(80, 80, 80);
+            padding: 10px;
+            font-size: 1.5em;
+            font-weight: bold;
+            color: white;
+        }
+        th, td{
+            width: 400px;
+            border: 1px solid black;
+            padding: 5px;
+        }
+        th {
+            background-color: rgb(78, 78, 78);
+            color: white;
+        }
+        a{
+            text-decoration: none;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        .top{
+            width: 150px;
+            background-color: white;
+            color: black;
+        }
+        #top1 {
+            background-color: white;
+            color: black;
+            width: 150px;
+        }
+        .num{
+            text-align: right;
+        }
+        #num{
+            text-align: center;
+        }
+        #p1{
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+    ANATOMIA DAS TABELAS
+    CAPTION
+    TABLE 
+        THEAD
+            TR, TD, TH
+        TBODY
+            TR, TD, TH
+        TFOOT
+            TR, TD, TH
+    -->
+    <table>
+        <thead>
+            <tr>
+                <th class="top" id="top1" scope="col">Posição</th>
+                <th scope="col">País</th>
+                <th scope="col">População</th>
+                <th scope="col">Continente</th>
+            </tr>
+            <caption>Os 30 países mais populosos do Mundo em 2025</caption>
+        </thead>
+        <tbody>
+            <tr>
+                <th class="top">1</th>
+                <td><a href="https://pt.wikipedia.org/wiki/%C3%8Dndia">Indía</a></td>
+                <td class="num">1.450.937.000</td>
+                <td>Ásia</td>
+            </tr>
+            <tr>
+                <th class="top">2</th>
+                <td><a href="https://pt.wikipedia.org/wiki/China">China</a></td>
+                <td class="num">1.419.321.000</td>
+                <td>Ásia</td>
+            </tr>
+            <tr>
+                <th class="top">3</th>
+                <td><a href="https://pt.wikipedia.org/wiki/Estados_Unidos">Estados Unidos</a></td>
+                <td class="num">345.426.000</td>
+                <td>América do Norte</td>
+            </tr>
+            <tr>
+                <th class="top">4</th>
+                <td><a href="https://pt.wikipedia.org/wiki/Indon%C3%A9sia">Indonésia</a></td>
+                <td class="num">283.488.000</td>
+                <td>Ásia</td>
+            </tr>
+            <tr>
+                <th class="top">5</th>
+                <td><a href="https://pt.wikipedia.org/wiki/Paquist%C3%A3o">Paquistão</a></td>
+                <td class="num">245.209.000</td>
+                <td>Ásia</td>
+            </tr>
+            <tr>
+                <th class="top">6</th>
+                <td><a href="https://pt.wikipedia.org/wiki/Nig%C3%A9ria">Nigéria</a></td>
+                <td class="num">232.679.000</td>
+                <td>África</td>
+            </tr>
+            <th class="top">7</th>
+            <td><a href="https://pt.wikipedia.org/wiki/Brasil">Brasil</a></td>
+            <td class="num">212.583.000</td>
+            <td>América do Sul</td>
+            <tr>
+                <th class="top">8</th>
+                <td><a href="https://pt.wikipedia.org/wiki/Bangladesh">Bangladesh</a></td>
+                <td class="num">173.562.000</td>
+                <td>Ásia</td>
+            </tr>
+            <tr>
+                <th class="top">9</th>
+                <td><a href="https://pt.wikipedia.org/wiki/R%C3%BAssia">Rússia</a></td>
+                <td class="num">144.820.000</td>
+                <td>Europa/Ásia</td>
+            </tr>
+            <tr>
+                <th class="top">10</th>
+                <td><a href="https://pt.wikipedia.org/wiki/M%C3%A9xico">México</a></td>
+                <td class="num">129.875.000</td>
+                <td>América do Norte</td>
+            </tr>
+            <th class="top">11</th>
+            <td><a href="https://pt.wikipedia.org/wiki/Eti%C3%B3pia">Etiópia</a></td>
+            <td class="num">126.527.000</td>
+            <td>Ásia</td>
+            <tr>
+                <th class="top">12</th>
+                <td><a href="https://pt.wikipedia.org/wiki/Jap%C3%A3o">Japão</a></td>
+                <td class="num">123.952.000</td>
+                <td>Ásia</td>
+            </tr>
+            <tr>
+                <th class="top">13</th>
+                <td><a href="https://pt.wikipedia.org/wiki/Filipinas">Filipinas</a></td>
+                <td class="num">115.843.000</td>
+                <td>Ásia</td>
+            </tr>
+            <tr>
+                <th class="top">14</th>
+                <td><a href="https://pt.wikipedia.org/wiki/Egito">Egito</a></td>
+                <td class="num">116.538.000</td>
+                <td>África</td>
+            </tr>
+            <tr>
+                <th class="top">15</th>
+                <td><a href="https://pt.wikipedia.org/wiki/Rep%C3%BAblica_Democr%C3%A1tica_do_Congo">República Democrática do Congo</a></td>
+                <td class="num">109.276.000</td>
+                <td>África</td>
+            </tr>
+            <tr>
+                <th class="top">16</th>
+                <td><a href="https://pt.wikipedia.org/wiki/Vietn%C3%A3">Vietnã</a></td>
+                <td class="num">100.098.000</td>
+                <td>Ásia</td>
+            </tr>
+            <tr>
+               
+                <th class="top">17</th>
+                <td><a href="https://pt.wikipedia.org/wiki/Ir%C3%A3">Irã</a></td>
+                <td class="num">91.568.000</td>
+                <td>Ásia</td>
+            </tr>
+            <tr>
+                 <th class="top">18</th>
+                <td><a href="https://pt.wikipedia.org/wiki/Turquia">Turquia</a></td>
+                <td class="num">87.474.000</td>
+                <td>Ásia/Europa</td>
+            </tr>
+            <tr>
+                <th class="top">19</th>
+                <td><a href="https://pt.wikipedia.org/wiki/Alemanha">Alemanha</a></td>
+                <td class="num">84.552.000</td>
+                <td>Europa</td>
+            </tr>
+            <th class="top">20</th>
+            <td><a href="https://pt.wikipedia.org/wiki/Tail%C3%A2ndia">Tailândia</a></td>
+            <td class="num">71.668.000</td>
+            <td>Ásia</td>
+            </tr>
+            <tr>
+                <th class="top">21</th>
+                <td><a href="https://pt.wikipedia.org/wiki/Reino_Unido">Reino Unido</a></td>
+                <td class="num">69.138.000</td>
+                <td>Europa</td>
+            </tr>
+            <tr>
+                <th class="top">22</th>
+                <td><a href="https://pt.wikipedia.org/wiki/Tanz%C3%A2nia">Tanzânia</a></td>
+                <td class="num">68.560.000</td>
+                <td>África</td>
+            </tr>
+            <tr>
+                <th class="top">23</th>
+                <td><a href="https://pt.wikipedia.org/wiki/Fran%C3%A7a">França</a></td>
+                <td class="num">64.762.000</td>
+                <td>Europa</td>
+            </tr>
+            <tr>
+                <th class="top">24</th>
+                <td><a href="https://pt.wikipedia.org/wiki/%C3%81frica_do_Sul">África do Sul</a></td>
+                <td class="num">60.414.000</td>
+                <td>África</td>
+            </tr>
+            <tr>
+                <th class="top">25</th>
+                <td><a href="https://pt.wikipedia.org/wiki/It%C3%A1lia">Itália</a></td>
+                <td class="num">58.983.000</td>
+                <td>Europa</td>
+            </tr>
+            <tr>
+                <th class="top">26</th>
+                <td><a href="https://pt.wikipedia.org/wiki/Qu%C3%A9nia">Quênia</a></td>
+                <td class="num">56.430.000</td>
+                <td>África</td>
+            </tr>
+            <tr>
+                <th class="top">27</th>
+                <td><a href="https://pt.wikipedia.org/wiki/Myanmar">Myammar</a></td>
+                <td class="num">54.500.000</td>
+                <td>Ásia</td>
+            </tr>
+            <tr>
+                <th class="top">28</th>
+                <td><a href="https://pt.wikipedia.org/wiki/Col%C3%B4mbia">Colômbia</a></td>
+                <td class="num">52.886.000</td>
+                <td>América do Sul</td>
+            </tr>
+            <tr>
+                <th class="top">29</th>
+                <td><a href="https://pt.wikipedia.org/wiki/Coreia_do_Sul">Coreia do Sul</a></td>
+                <td class="num">51.717.000</td>
+                <td>Ásia</td>
+            </tr>
+            <tr>
+                <th class="top">30</th>
+                <td><a href="https://pt.wikipedia.org/wiki/Sud%C3%A3o">Sudão</a></td>
+                <td class="num">50.449.000</td>
+                <td>África</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td id="top1"></td>
+            <th id="p1" scope="row">População mundial</th>
+            <td  class="num" id="num"><strong>8.230.617.882</strong></td>
+            <td></td>
+        </tfoot>
+    </table>
+</body>
+</html>
