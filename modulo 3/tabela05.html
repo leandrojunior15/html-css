@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilo por grupo</title>
+    <style>
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+        th, td{
+            border: 1px solid black;
+            padding: 8px;
+        }
+        caption {
+            font-size: 1.5em;
+        }
+        .w1{
+            background-color: blue;
+        }
+        .sexo{
+            background-color: deeppink;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício de Tabela</h1>
+    <table>
+        <colgroup>
+            <col class="w1">
+            <col class="sexo" span="2">
+            <col class="idade">
+            <col class="profissao">
+        </colgroup>
+        <caption>Cadastro</caption>
+     <thead>
+    <tr>
+      <th scope="col">Nome</th>
+      <th scope="col">Sexo</th>
+      <th scope="col">Idade</th>
+      <th scope="col">Profissão</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Ana Silva</td>
+      <td>Feminino</td>
+      <td>34</td>
+      <td>Engenheira</td>
+    </tr>
+    <tr>
+      <td>Bruno Costa</td>
+      <td>Masculino</td>
+      <td>45</td>
+      <td>Arquiteto</td>
+    </tr>
+    <tr>
+      <td>Carla Dias</td>
+      <td>Feminino</td>
+      <td>29</td>
+      <td>Designer</td>
+    </tr>
+    <tr>
+      <td>Daniel Martins</td>
+      <td>Masculino</td>
+      <td>52</td>
+      <td>Médico</td>
+    </tr>
+    <tr>
+      <td>Elena Ferreira</td>
+      <td>Feminino</td>
+      <td>41</td>
+      <td>Professora</td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>
