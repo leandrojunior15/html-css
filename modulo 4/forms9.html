@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <form action="cadastro.js" method="get">
+        <p>
+            <label for="inum">Número: </label>
+            <input type="range" name="number" id="inum" min="0" max="10" value="5" oninput="ival.innerHTML= Number(inum.value)">
+            <output id="ival"></output>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
