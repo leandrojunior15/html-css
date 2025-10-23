@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Configurações gerais de style*/
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        html,
+        body {
+            width: 100vw;
+            height: 100vh;
+            background-color: black;
+        }
+
+        h1 {
+            color: white;
+            text-shadow: 2px 2px 0px gray;
+            padding: 10px;
+        }
+
+        /* Style para tela no modo retrato (portrait)*/
+        @media screen and (orientation: portrait) {
+            body {
+                background-image: url(../../imagens/cev-portrait.jpg);
+                background-position: center bottom;
+            }
+        }
+
+
+        /* Style para tela no modo paisagem (landscape)*/
+        @media screen and (orientation: landscape) {
+            body {
+                background-image: url(../../imagens/cev-landscape.jpg);
+                background-position: left bottom;
+            }
+        }
+        
+    </style>
+    <title>Media Query</title>
+</head>
+
+<body>
+    <h1>Testando a orientação dos dispotivos com Media Queries</h1>
+</body>
+
+</html>
